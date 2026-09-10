@@ -1,3 +1,8 @@
+# build output
+/bin/
 app
 *.exe
+*.out
+
+# IDE
 .idea/
