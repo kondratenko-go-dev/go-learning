@@ -8,4 +8,7 @@ import (
 
 func main() {
 	fmt.Println(greet.Hello("Aleksandr"))
+	//fmt.Println(greet.whisper("test"))
+
+	//name whisper not exported by package greet
 }
