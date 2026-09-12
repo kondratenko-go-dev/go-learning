@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-const myName = "Aleksandr"
+var myName = "Aleksandr"
 
 func main() {
 	var name string
