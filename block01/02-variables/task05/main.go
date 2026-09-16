@@ -16,17 +16,16 @@ func main() {
 	//block01/02-variables/task05/main.go:18:18: cannot use 1 << 100 (
 	//untyped int constant 1267650600228229401496703205376) as int value in constant declaration (overflows)
 	//const big int = 1 << 100
-	// Error: int overflows 1 << 100
 
 	// Working part
 	const limit = 10
 	fmt.Printf("limit=%d\n", limit)
 
 	// Experiment 4: Untyped huge constant
-	//In a nutshell: the boundary between "what the compiler thinks" and "what the program
-	//executes" is precisely the point where a constant must acquire a concrete type.
 	const huge = 1 << 100
 	fmt.Printf("shifted=%d\n", huge>>98)
+	//In a nutshell: the boundary between "what the compiler thinks" and "what the program
+	//executes" is precisely the point where a constant must acquire a concrete type.
 	// fmt.Println(huge)
 	// Error: cannot use huge (untyped int constant 1267650600228229401496703205376) as int value in argument to fmt.Println (overflows)
 
