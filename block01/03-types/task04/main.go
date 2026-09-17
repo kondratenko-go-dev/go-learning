@@ -31,7 +31,6 @@ When replacing `string(rune(65))` with `string(65)`, the `go vet` command issues
 
 ./main.go:27:54: conversion from int to string yields a string of one rune, not a string of digits (did you mean strconv.Itoa?)
 
---- Почему это происходит (Разбор ловушки) ---
 1. The `string(65)` construct interprets the number 65 not as the string "65", but as a character code (Unicode code point).
    Since 65 is the code for the uppercase Latin letter 'A', the result is the string "A".
    Go considers a direct cast of an integer to `string` to be a potential error—as developers

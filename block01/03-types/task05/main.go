@@ -48,7 +48,7 @@ func main() {
 Why Atoi("3.14") returns an error instead of truncating or rounding to 3:
 The name `Atoi` stands for "ASCII to Integer". By design, its sole responsibility
 is to parse strings that exclusively represent whole numbers (integers), including
-an optional optional leading sign ('+' or '-').
+an optional leading sign ('+' or '-').
 
 When `strconv.Atoi` encounters the dot character ('.') in "3.14", it treats it as an
 invalid character for an integer format, rather than a decimal separator. Go values
