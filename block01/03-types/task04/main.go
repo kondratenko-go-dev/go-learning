@@ -24,6 +24,9 @@ func main() {
 
 	str := "Go"
 	fmt.Printf("bytes: %v runes: %v\n", []byte(str), []rune(str))
+
+	fmt.Printf("%.0f %.0f %.0f\n", 0.5, 1.5, 2.5)
+	fmt.Printf("%v %v %v\n", math.Round(0.5), math.Round(1.5), math.Round(2.5))
 }
 
 /*

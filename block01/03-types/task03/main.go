@@ -13,7 +13,7 @@ func main() {
 
 	fmt.Printf("precise: %.20f\n", sum)
 
-	epsilon := 1e-9
+	const epsilon = 1e-9
 	epsilonEqual := math.Abs(sum-c) < epsilon
 	fmt.Printf("epsilon equal: %v\n", epsilonEqual)
 
