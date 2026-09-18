@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	headerFmt := "%-12s%8s%5s\n"
-	dataFmt := "%-12s%8.2f%5d\n"
+	const headerFmt = "%-12s%8s%5s\n"
+	const dataFmt = "%-12s%8.2f%5d\n"
 
 	fmt.Printf(headerFmt, "Name", "Price", "Qty")
 

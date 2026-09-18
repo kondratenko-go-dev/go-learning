@@ -24,8 +24,7 @@ func main() {
 	fmt.Printf("Printf strings: %s%s\n", "a", "b")
 	fmt.Printf("Printf numbers: %d%d\n", 1, 2)
 
-	// Предсказание: "1b 2"
-	// fmt.Print(1, "b", 2)
+	//fmt.Print(1, "b", 2)  1b2%
 
 	//Rule: fmt.Print automatically inserts a space between arguments if and only if neither of the adjacent arguments is a string. If at least one of the two neighboring arguments is a string, no space is added between them.
 }

@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// fmt.Printf("%d\n", "hello")     // 1. Inappropriate verb
-	// fmt.Printf("%d %d\n", 1)        // 2. Insufficient arguments
-	// fmt.Printf("%d\n", 1, 2)        // 3. Many arguments
-	// fmt.Printf("discount: 50%\n")   // 4. Single percent sign error
-	// fmt.Printf("%s\n")              // 5. Verb without arguments
+	fmt.Printf("%d\n", "hello")   // 1. fmt.Printf format %d has arg "hello" of wrong type string
+	fmt.Printf("%d %d\n", 1)      // 2. fmt.Printf format %d reads arg #2, but call has 1 arg
+	fmt.Printf("%d\n", 1, 2)      // 3. fmt.Printf call needs 1 arg but has 2 args
+	fmt.Printf("discount: 50%\n") // 4. fmt.Printf format % has unknown verb
+	fmt.Printf("%s\n")            // 5. fmt.Printf format %s reads arg #1, but call has 0 args
 
 	fmt.Printf("discount: 50%%\n")
 
